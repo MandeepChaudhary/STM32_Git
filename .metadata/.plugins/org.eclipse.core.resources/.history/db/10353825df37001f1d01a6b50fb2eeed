@@ -21,7 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "UartRingbuffer.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -40,7 +40,7 @@
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
-extern UART_HandleTypeDef huart2;
+UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
 
@@ -56,7 +56,7 @@ static void MX_USART2_UART_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-char buffer[5];
+
 /* USER CODE END 0 */
 
 /**
@@ -91,8 +91,6 @@ int main(void)
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
 
-  Ringbuf_init ();
-
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -102,17 +100,6 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  /* wait_for is replaced by get_pos */
-
-//	  int data = Uart_read();
-//	  Uart_write(data);
-
-	  if (Get_after("hello", 5, buffer))
-	  {
-		  Uart_sendstring("the data is\r\n");
-		  Uart_sendstring(buffer);
-	  }
-
   }
   /* USER CODE END 3 */
 }
