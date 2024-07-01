@@ -1,0 +1,19 @@
+!SESSION 2024-07-01 20:51:52.658 -----------------------------------------------
+eclipse.buildId=Version 1.15.1
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_DE
+Framework arguments:  -keyring /Users/mandeepchaudhary/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -data /Users/mandeepchaudhary/Desktop/Stm32_Git -keyring /Users/mandeepchaudhary/.eclipse_keyring
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-07-01 20:52:02.632
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-07-01 20:52:02.634
+!MESSAGE Log4j2 initialized with config file /Users/mandeepchaudhary/Desktop/Stm32_Git/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-07-01 20:52:07.502
+!MESSAGE Started RMI Server, listening on port 41338
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-07-01 20:53:47.115
+!MESSAGE Indexed 'RingBuffer' (21 sources, 81 headers) in 6.48 sec: 4,422 declarations; 18,427 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0088%)
